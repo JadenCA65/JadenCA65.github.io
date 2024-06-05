@@ -14,3 +14,26 @@ body {
     filter: brightness(50%); /* Lower the brightness by 50% */
     filter: hue-rotate(90deg); /* Give the background some spice */
 }
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background: #D6B4FC;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.logo {
+    float: left;
+}
+
+nav {
+    float: right;
+}
