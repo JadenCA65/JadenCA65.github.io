@@ -21,7 +21,8 @@ body {
 }
 
 header {
-    background: #ccccff;
+    background-colour: #ccccff;
+    display: block;
 }
 
 header::after {
