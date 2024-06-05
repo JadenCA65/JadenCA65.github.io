@@ -3,40 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+    <title>Animated Background</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Ensures the video covers the entire viewport */
+        }
+
+        #background-video {
+            position: fixed;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -1; /* Ensures the video is behind other content */
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>Your Website Name</h1>
-        <nav>
-            <ul>
-                <li><a href="#section1">Section 1</a></li>
-                <li><a href="#section2">Section 2</a></li>
-                <li><a href="#section3">Section 3</a></li>
-            </ul>
-        </nav>
-    </header>
+    <!-- Your content here -->
 
-    <main>
-        <section id="section1">
-            <h2>Section 1</h2>
-            <p>This is the content of section 1.</p>
-        </section>
-
-        <section id="section2">
-            <h2>Section 2</h2>
-            <p>This is the content of section 2.</p>
-        </section>
-
-        <section id="section3">
-            <h2>Section 3</h2>
-            <p>This is the content of section 3.</p>
-        </section>
-    </main>
-
-    <footer>
-        <p>&copy; 2024 Your Name</p>
-    </footer>
+    <video id="background-video" autoplay muted loop>
+        <source src="louis_loop_4.mp4" type="video/mp4">
+        <!-- Add additional sources for other video formats if needed -->
+        Your browser does not support the video tag.
+    </video>
 </body>
 </html>
